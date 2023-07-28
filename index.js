@@ -5,7 +5,9 @@ function mixed_message(){
 
     let random_index = Math.floor(Math.random() * list1.length)
 
-    console.log(random_index);
+    let message = list1[random_index] + " " + list2[random_index]+ " " + list3[random_index]
+
+    console.log(message);
 }
 
 
