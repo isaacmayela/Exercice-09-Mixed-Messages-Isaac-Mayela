@@ -1,3 +1,1 @@
-// hello !
-// hey how are u
-// eferguheru
+console.log("bonjour")
