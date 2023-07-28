@@ -1,11 +1,14 @@
+function index_random(list){
+    return Math.floor(Math.random() * list.length)
+}
+
 function mixed_message(){
     list1 = ["J'aime","Tu adores","Samar s'amuse à","Joseph a fini de"]
     list2 = ["nager", "parler à tes collègues","jouer à la console","préparer"]
     list3 = ["avec cette culotte bleu","comme d'habitude","chez moi",", c'est bien !"]
 
-    let random_index = Math.floor(Math.random() * list1.length)
 
-    let message = list1[random_index] + " " + list2[random_index]+ " " + list3[random_index]
+    let message = list1[index_random(list1)] + " " + list2[index_random(list2)]+ " " + list3[index_random(list3)]
 
     console.log(message);
 }
